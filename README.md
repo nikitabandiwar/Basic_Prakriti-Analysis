@@ -1,0 +1,1 @@
+# Basic_Prakriti-Analysis
