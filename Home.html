@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakriti Assessment Registration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #d0f0c0, #f7f1e1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            z-index: 2;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 34px;
+            color: #6B8E23;
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .form-header {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 8px;
+            display: block;
+            font-size: 14px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            box-sizing: border-box;
+            background-color: #f7f7f7;
+            margin-top: 8px;
+            transition: all 0.3s ease;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 14px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        input[type="date"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #4CAF50;
+            background-color: #ffffff;
+        }
+
+        /* 3D Effect for Inputs and Buttons */
+        .form-group input,
+        .form-group select {
+            transform: translateZ(0);
+        }
+
+        .form-header {
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            color: #4b8a3d;
+            margin-bottom: 30px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        /* Natural Decorative Elements */
+        .leaf {
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+            animation: leaf-animation 10s infinite;
+        }
+
+        @keyframes leaf-animation {
+            0% { transform: translateX(-50%) rotate(0deg); }
+            50% { transform: translateX(-30%) rotate(45deg); }
+            100% { transform: translateX(-50%) rotate(90deg); }
+        }
+
+        .parallax {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -2;
+            width: 100%;
+            height: 100%;
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCkdPWRUW56uX4k5tjv1THA8wQfvh9Ct2yOcvxsGAgy1yZDD9sDkBNy-XXZzSEmWSNkSM&usqp=CAU") no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(8px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Parallax Background -->
+<div class="parallax"></div>
+
+<div class="container">
+    <h2>Prakriti Assessment Registration</h2>
+    
+    <div class="form-header">
+        <p>Discover your true nature through the Prakriti Assessment and take the first step towards wellness!</p>
+    </div>
+
+    <form action="#" method="POST">
+        <!-- Full Name -->
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+        </div>
+
+        <!-- Phone Number -->
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+            <a href="scan.html">
+                <input type="button" value="Register Now">
+            </a>
+        </div>
+    </form>
+
+    <div class="footer">
+        <p>&copy; 2024 Prakriti Assessment. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </div>
+
+    <!-- Floating Leaves (Symbolizing Nature & Ayurveda) -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCkdPWRUW56uX4k5tjv1THA8wQfvh9Ct2yOcvxsGAgy1yZDD9sDkBNy-XXZzSEmWSNkSM&usqp=CAU" alt="Floating Leaf" class="leaf">
+</div>
+
+</body>
+</html>

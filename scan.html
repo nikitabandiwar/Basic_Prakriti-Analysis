@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakriti Assessment</title>
+    <link rel="stylesheet" href="scanstyle.css"> <!-- External CSS Link -->
+</head>
+<body>
+
+<!-- Background Image -->
+<div class="background-image"></div>
+
+<div class="container">
+    <h2>Take Your Prakriti Assessment</h2>
+    <p class="instruction">Scan your pulse rate using the camera below to discover your Ayurvedic body type.</p>
+    
+    <!-- Camera Access Button -->
+    <div class="camera-section">
+        <button id="start-scan">Start Pulse Scan</button>
+        <p class="camera-prompt">Click the button to start scanning your pulse with the camera.</p>
+
+        <!-- Video Element for Camera Feed -->
+        <div class="camera-container">
+            <video id="video" width="100%" height="auto" autoplay></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+        </div>
+    </div>
+
+    <!-- Assessment Results -->
+    <div class="result-container" id="result-container">
+        <h3>Your Prakriti Body Type: <span id="prakriti-type">Loading...</span></h3>
+        <p id="prakriti-description">Please wait while we analyze your pulse...</p>
+        
+        <div class="body-type-info">
+            <img id="prakriti-image" src="" alt="Prakriti Type">
+            <p id="prakriti-details">Detailed explanation of your Prakriti will be displayed here...If you have a predominantly Kapha constitution,<br>
+                the qualities of Kapha (slow, steady, moist, smooth, oily, cool, heavy) will be expressed in your mind and body.
+
+                Here are some other easy things you can do to remedy a Kapha imbalance:<br>
+                1-Follow a Kapha dosha-balancing diet, favoring lighter fare and tastes that are bitter, pungent, and astringent, <br>
+                while avoiding heavy, oily foods and those that are sweet, sour, and salty.
+                
+            </p>
+        </div>
+
+        <!-- Action Buttons -->
+        <button id="retake-button" style="display:none;">Retake Assessment</button>
+        <button id="finish-button" style="display:none;">Finish</button>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>&copy; 2024 Prakriti Assessment | All Rights Reserved</p>
+</div>
+
+<script src="prakriti_assessment.js"></script> <!-- External JS Link -->
+</body>
+</html>
